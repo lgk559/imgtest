@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   //   storesDirs: ['./stores/**'],
   // },
   "app": {
+    baseURL: '/',
     "head": {
       "viewport": "width=500, initial-scale=1",
       "title": "Nuxt3 高效入門全攻略",
@@ -39,4 +40,5 @@ export default defineNuxtConfig({
       baseURL: process.env.NODE_ENV === "development" ? "/_nuxt/assets/images" : "/_nuxt"
     }
   },
+
 })
