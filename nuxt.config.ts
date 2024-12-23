@@ -2,7 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt'],
+  // modules: ['@pinia/nuxt','@nuxt/image'],
+  modules: ['@nuxt/image'],
+  image: {
+    dir: 'assets/images'
+  },
   // pinia: {
   //   storesDirs: ['./stores/**'],
   // },
@@ -34,5 +38,5 @@ export default defineNuxtConfig({
     public: {
       baseURL: process.env.NODE_ENV === "development" ? "/_nuxt/assets/images" : "/_nuxt"
     }
-  }
+  },
 })
